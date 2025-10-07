@@ -29,7 +29,60 @@ const navItems: NavItem[] = [
   {
     icon: <GridIcon />,
     name: "Dashboard",
-    subItems: [{ name: "Ecommerce", path: "/", pro: false }],
+    subItems: [
+      { name: "Hospital Overview", path: "/", pro: false },
+      { name: "Analytics", path: "/analytics", pro: true },
+    ],
+  },
+  {
+    icon: <UserCircleIcon />,
+    name: "Patients",
+    subItems: [
+      { name: "Patient List", path: "/patients", pro: false },
+      { name: "Add Patient", path: "/patients/add", pro: false },
+    ],
+  },
+  {
+    icon: <UserCircleIcon />,
+    name: "Doctors",
+    subItems: [
+      { name: "Doctor Directory", path: "/doctors", pro: false },
+      { name: "Schedule", path: "/doctors/schedule", pro: false },
+    ],
+  },
+  {
+    icon: <CalenderIcon />,
+    name: "Appointments",
+    subItems: [
+      { name: "Calendar", path: "/appointments", pro: false },
+      { name: "Book Appointment", path: "/appointments/book", pro: false },
+    ],
+  },
+  {
+    icon: <BoxCubeIcon />,
+    name: "Patient Care",
+    subItems: [
+      { name: "OPD", path: "/opd", pro: false },
+      { name: "IPD", path: "/ipd", pro: false },
+      { name: "Emergency", path: "/emergency", pro: true },
+    ],
+  },
+  {
+    icon: <ListIcon />,
+    name: "Services",
+    subItems: [
+      { name: "Pharmacy", path: "/pharmacy", pro: false },
+      { name: "Laboratory", path: "/laboratory", pro: false },
+      { name: "Billing", path: "/billing", pro: false },
+    ],
+  },
+  {
+    icon: <PieChartIcon />,
+    name: "Reports",
+    subItems: [
+      { name: "Daily Summary", path: "/reports/daily", pro: false },
+      { name: "Analytics", path: "/reports/analytics", pro: true },
+    ],
   },
   {
     icon: <CalenderIcon />,
